@@ -5,16 +5,22 @@ public static void main(String[] args) {
     System.out.println("How old are you?");
     int age = input.nextInt();
 
-    if (age <= 12) {
+    if (age <0) {
+        System.out.println("You are on line to come to this world");
+    }
+    else if (age <= 12) {
         System.out.println("You are a kid");
     }
-    else if (age >= 13 && age <= 17) {
+    else if (age <= 17) {
         System.out.println("You are a teen");
     }
-    else if (age >= 18 && age <= 59) {
+    else if (age <= 59) {
         System.out.println("You are an adult");
     }
-    else {
+    else if (age <= 110) {
         System.out.println("You are a senior");
+    }
+    else {
+        System.out.println("You are something out of this world!");
     }
 }
