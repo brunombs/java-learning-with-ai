@@ -31,5 +31,10 @@ public class Employee {
         System.out.println("Employee Name: " + employee1.getName() + " | Salary: $" + employee1.getSalary());
         System.out.println("Employee Name: " + employee2.getName() + " | Salary: $" + employee2.getSalary());
         System.out.println("Employee Name: " + employee3.getName() + " | Salary: $" + employee3.getSalary());
+
+        employee1.setSalary(700);
+        System.out.println("Employee Name: " + employee1.getName() + " | New Salary: $" + employee1.getSalary());
+        employee2.setName("Enzo");
+        System.out.println("Employee New Name: " + employee2.getName() + " | Salary: $" + employee2.getSalary());
     }
 }
