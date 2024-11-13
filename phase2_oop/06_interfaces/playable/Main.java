@@ -6,7 +6,9 @@ public class Main {
         PianoInterface pianoInterface = new PianoInterface();
 
         guitarInterface.play();
+        guitarInterface.stop();
         pianoInterface.play();
+        pianoInterface.stop();
 
 
     }

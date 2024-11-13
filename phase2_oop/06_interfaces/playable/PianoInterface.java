@@ -5,4 +5,9 @@ public class PianoInterface implements Playable {
     public void play() {
         System.out.println("Playing piano sounds");
     }
+
+    @Override
+    public void stop() {
+        System.out.println("Stopping piano sounds");
+    }
 }
