@@ -1,7 +1,5 @@
 package vehicle;
 
-import vehicle_car.Vehicle;
-
 public class CarDrivable implements Drivable {
     @Override
     public void drive() {
