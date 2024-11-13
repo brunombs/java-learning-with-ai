@@ -15,6 +15,6 @@ public class StudentInheritance extends PersonInheritance{
         System.out.println("Student Information:");
         System.out.println("Name: " + this.getName());
         System.out.println("Age: " + this.getAge());
-        System.out.println("Grade: " + this.grade);
+        System.out.println("Grade: " + this.getGrade());
     }
 }
