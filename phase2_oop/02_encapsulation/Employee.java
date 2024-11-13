@@ -23,6 +23,10 @@ public class Employee {
         this.salary = salary;
     }
 
+    public void display() {
+        System.out.println("Employee Name: " + this.getName() + " | Salary: $" + this.getSalary());
+    }
+
     public static void main(String[] args) {
         Employee employee1 = new Employee("John", 500);
         Employee employee2 = new Employee("Jane", 100);
@@ -31,6 +35,8 @@ public class Employee {
         System.out.println("Employee Name: " + employee1.getName() + " | Salary: $" + employee1.getSalary());
         System.out.println("Employee Name: " + employee2.getName() + " | Salary: $" + employee2.getSalary());
         System.out.println("Employee Name: " + employee3.getName() + " | Salary: $" + employee3.getSalary());
+        employee3.setName("Orlando");
+        employee3.display();
 
         employee1.setSalary(700);
         System.out.println("Employee Name: " + employee1.getName() + " | New Salary: $" + employee1.getSalary());
