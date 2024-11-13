@@ -17,7 +17,15 @@ public class Product {
         Product computer = new Product("Computer", 1500, 10);
         Product bicycle = new Product("Bicycle", 550.99, 30);
 
-        System.out.println(computer.totalValue());
-        System.out.println(bicycle.totalValue());
+        System.out.println(computer.name +
+                " unit price is: " + computer.price +
+                " quantity: " + computer.quantity +
+                " total value: " + computer.totalValue());
+        System.out.println(bicycle.name +
+                ", unit price: " + bicycle.price +
+                ", quantity: " + bicycle.quantity +
+                ", total value: " + bicycle.totalValue());
+
+
     }
 }
