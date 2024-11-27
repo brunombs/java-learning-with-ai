@@ -10,8 +10,8 @@ public class ManageNames {
         names.add("Bob");
         names.add("Mary");
 
-        for (String name : names) {
-            System.out.println(name);
+        for(int i = 0; i < names.size(); i++) {
+            System.out.println("Name " + (i + 1) + " on list: " + names.get(i));
         }
 
         System.out.println("List size: " + names.size());
