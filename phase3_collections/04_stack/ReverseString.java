@@ -1,18 +1,24 @@
 import java.util.Stack;
+import java.util.Scanner;
 
 public class ReverseString {
     public static void main(String[] args) {
-        Stack<Character> stack = new Stack<>();
-        stack.push('h');
-        stack.push('e');
-        stack.push('l');
-        stack.push('l');
-        stack.push('o');
+        Scanner scanner = new Scanner(System.in);
 
-        StringBuilder reversedString = new StringBuilder();
-        while (!stack.isEmpty()) {
-            reversedString.append(stack.pop());
+        System.out.println("Digite uma palavra para reverter:");
+        String input = scanner.nextLine();
+
+        Stack<Character> stack = new Stack<>();
+
+        for (char c : input.toCharArray()) {
+            stack.push(c);
         }
-        System.out.println("Reversed string: " + reversedString);
+
+        StringBuilder reversed = new StringBuilder();
+        while (!stack.isEmpty()) {
+            reversed.append(stack.pop());
+        }
+
+        System.out.println("String invertida: " + reversed);
     }
 }
